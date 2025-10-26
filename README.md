@@ -37,33 +37,34 @@ Game-X is a gaming website template oriented towards esports, tournaments, gamin
 
 ## Project Structure  
 Game-X-The-Gaming-Website/
-└── main/
-    ├── index.php
-    ├── assets/
-    │   ├── css/
-    │   │   ├── style.css
-    │   │   └── utility.css
-    │   ├── js/
-    │   │   ├── script.js
-    │   │   └── pages.js
-    │   └── img/
-    ├── components/
-    │   ├── header.php
-    │   ├── footer.php
-    │   ├── card-game.php
-    │   └── product-card.php
-    ├── pages/
-    │   ├── home.php
-    │   ├── tournaments.php
-    │   ├── shop.php
-    │   └── about.php
-    ├── data/
-    │   ├── tournaments.json
-    │   └── products.json
-    ├── api/
-    │   ├── tournaments.php
-    │   └── products.php
-    └── README.md
+`-- main/
+    |-- index.php
+    |-- assets/
+    |   |-- css/
+    |   |   |-- style.css
+    |   |   `-- utility.css
+    |   |-- js/
+    |   |   |-- script.js
+    |   |   `-- pages.js
+    |   `-- img/
+    |-- components/
+    |   |-- header.php
+    |   |-- footer.php
+    |   |-- card-game.php
+    |   `-- product-card.php
+    |-- pages/
+    |   |-- home.php
+    |   |-- tournaments.php
+    |   |-- shop.php
+    |   `-- about.php
+    |-- data/
+    |   |-- tournaments.json
+    |   `-- products.json
+    |-- api/
+    |   |-- tournaments.php
+    |   `-- products.php
+    `-- README.md
+
 
 *(Adjust the folder names exactly as in your repo)*  
 
