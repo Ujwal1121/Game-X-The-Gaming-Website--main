@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battle Royale</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #000;
+        font-family: "Noto Sans", sans-serif;
+        color: white;
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping of cards */
+        margin: 20px;
+
+        margin-top: 10px;
+        padding: 10px; /* Add some padding for spacing */
+        height: auto; /* Adjust height to fit content */
+      }
+      .Container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+      .fcard {
+        position: relative;
+        width: 300px;
+        height: 400px; /* Adjust height for cards */
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .fcard:hover {
+        width: 300px; /* Keep consistent width on hover */
+      }
+
+      .fcard img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .fcard:hover img {
+        transform: scale(1.1);
+      }
+
+      .fcarddetails {
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        color: white;
+        z-index: 2;
+      }
+
+      .fcarddetails .tegs2 {
+        display: flex;
+        gap: 10px;
+      }
+
+      .teg {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .teg i {
+        color: yellow;
+      }
+
+      .teg h3 a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .teg h3 a:hover {
+        color: #ffc311;
+      }
+
+      .fhovercont {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        display: none;
+      }
+
+      .fcard:hover .fhovercont {
+        display: block;
+      }
+
+      .fhovercont h2 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .fhovercont p {
+        font-size: 14px;
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Container">
+      <div class="fcard">
+        <img
+          src="pubg.webp"
+          alt=""
+        />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>Battle Ground Mobile India.</h2>
+          <br />
+
+          <p>
+            Battle Royale Mobile India is an immersive and action-packed
+            multiplayer game that brings the thrill of survival to your
+            fingertips. Set in expansive maps with stunning visuals, players are
+            dropped into a competitive arena where the goal is simple: be the
+            last one standing.
+          </p>
+        </div>
+      </div>
+
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img
+          src="free fire.jpg"
+          alt=""
+        />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>Garena Free Fire</h2>
+          <br />
+          <p>
+            Free Fire is a fast-paced battle royale game designed for mobile
+            players seeking thrilling, action-packed gameplay. Each match drops
+            50 players onto a remote island, where survival is the ultimate
+            objective. With only 10 minutes to claim victory, players must loot
+            weapons, gather resources, and outsmart opponents in an
+            ever-shrinking safe zone.
+          </p>
+        </div>
+      </div>
+      <!-- Repeat this block as needed -->
+
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img
+          src="Call of duty.jpg"
+          alt=""
+        />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>Call of Duty</h2>
+          <br />
+          <p>
+            Call of Duty: Mobile brings the iconic first-person shooter
+            experience to your fingertips, blending the intense action of the
+            franchise with battle royale and multiplayer modes. Whether you’re
+            dropping into a massive battlefield with 100 players in Battle
+            Royale mode or engaging in fast-paced 5v5 team deathmatches, the
+            game offers an adrenaline-fueled experience packed with tactical
+            depth.
+          </p>
+        </div>
+      </div>
+
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img
+          src="modern strike.jpg"
+          alt=""
+        />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>Modern Strike</h2>
+          <br />
+          <p>
+            A modern trike is a three-wheeled vehicle designed with contemporary aesthetics and advanced functionality, catering to various uses such as transportation, recreation, or fitness. These trikes often blend sleek, ergonomic designs with cutting-edge materials
+          </p>
+        </div>
+      </div>
+
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img
+          src="Apex legends.jpg"
+          alt=""
+        />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>Apex Legends</h2>
+          <br />
+          <p>
+            Apex Legends Mobile is a dynamic battle royale game that redefines
+            mobile gaming with its unique blend of strategy, skill, and
+            high-octane action. Set in the futuristic world of the Apex Games,
+            players form squads of three and choose from a diverse roster of
+            Legends, each with distinct abilities that add depth to every match.
+          </p>
+        </div>
+      </div>
+
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img
+          src="Ring of Elysium.jpg"
+          alt=""
+        />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>Ring of Elysium</h2>
+          <br />
+          <p>
+            Ring of Elysium is a visually stunning and innovative battle royale
+            game that pushes the boundaries of the genre. Set in breathtaking
+            environments ranging from snow-capped mountains to tropical islands,
+            the game combines survival mechanics with adrenaline-pumping combat.
+            Players must adapt to dynamic weather conditions and natural
+            disasters while fighting to be the last one standing.
+          </p>
+        </div>
+      </div>
+
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img
+          src="CRSED.jpg"
+          alt=""
+        />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>CRSED: F.O.A.D.</h2>
+          <br />
+          <p>
+            CRSED: Cuisine Royale is a battle royale multiplayer online shooter video game developed by Latvian studio Darkflow Studio and published by Gaijin Entertainment. It was previously known as Cuisine Royale. The game was officially launched on December 19, 2019, and was relaunched under a new name in December 2020.
+          </p>
+        </div>
+      </div>
+
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img
+          src="Naraka.jpg"
+          alt=""
+        />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>NARAKA: BLADEPOINT</h2>
+          <br />
+          <p>
+            Naraka: Bladepoint is a free-to-play wuxia action battle royale game developed by 24 Entertainment and published by NetEase Games Montreal. It is a game where up to 60 players fight each other to be the last one standing.          </p>
+        </div>
+      </div>
+
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img
+          src="HIZI.jpg"
+          alt=""
+        />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>Z1 Battle Royale</h2>
+          <br />
+          <p>
+            Z1 Battle Royale is a battle royale game developed and published by Daybreak Game Company. The game's development began after the original H1Z1 was spun off into two separate projects in early 2016: H1Z1: Just Survive and H1Z1: King of the Kill.          </p>
+        </div>
+      </div>
+      
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img
+          src="Vampire.jpg"
+          alt=""
+        />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>Vampire: The Masquerade Bloodhunt</h2>
+          <br />
+          <p>
+            Vampire: The Masquerade Bloodhunt is a free-to-play battle royale game developed and published by Swedish developer Sharkmob. It is based on the tabletop role-playing game Vampire: The Masquerade, and is part of the larger World of Darkness series.        </div>
+      </div>
+
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img
+          src="Cyber Hunt.jpg"
+          alt=""
+        />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>Cyber Hunter</h2>
+          <br />
+          <p>
+            Cyber Hunter is a 2019 Chinese sci-fi battle royale video game for mobiles and PC platforms developed and distributed by NetEase. It was released on 26 April 2019. The mobile app of Cyber Hunter was banned in India on 2 September 2020 by the government, the move came amid the 2020 China-India skirmish.        </div>
+      </div>
+
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img
+          src="Off the grid.avif"
+          alt=""
+        />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>Off The Grid</h2>
+          <br />
+          <p>
+            Off The Grid is an upcoming free-to-play battle royale video game developed and published by Gunzilla Games. Currently in early access, the game will feature a narrative storyline directed by Neill Blomkamp, as well as a NFT marketplace for purchasing and selling in-game items.        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

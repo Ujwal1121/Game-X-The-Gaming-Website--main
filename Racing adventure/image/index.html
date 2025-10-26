@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Racing</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #000;
+        font-family: "Noto Sans", sans-serif;
+        color: white;
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping of cards */
+        margin: 20px;
+
+        margin-top: 10px;
+        padding: 10px; /* Add some padding for spacing */
+        height: auto; /* Adjust height to fit content */
+      }
+      .Container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+      .fcard {
+        position: relative;
+        width: 300px;
+        height: 400px; /* Adjust height for cards */
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .fcard:hover {
+        width: 300px; /* Keep consistent width on hover */
+      }
+
+      .fcard img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .fcard:hover img {
+        transform: scale(1.1);
+      }
+
+      .fcarddetails {
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        color: white;
+        z-index: 2;
+      }
+
+      .fcarddetails .tegs2 {
+        display: flex;
+        gap: 10px;
+      }
+
+      .teg {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .teg i {
+        color: yellow;
+      }
+
+      .teg h3 a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .teg h3 a:hover {
+        color: #ffc311;
+      }
+
+      .fhovercont {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        display: none;
+      }
+
+      .fcard:hover .fhovercont {
+        display: block;
+      }
+
+      .fhovercont h2 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .fhovercont p {
+        font-size: 14px;
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Container">
+      <div class="fcard">
+        <img src="CD3.jpeg" alt="Game 1" />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+              <h3>
+                <a href="/"></a>
+                <a href="/"></a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>Crash Drive 3</h2>
+          <br />
+          <p>
+            Crash Drive 3 is a dynamic, open-world racing and stunting game
+            developed by M2H. Known for its lighthearted and chaotic gameplay,
+            the game offers a vast playground where players can explore a
+            variety of terrains,
+          </p>
+        </div>
+      </div>
+
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img src="NFS.webp" alt="Game 2" />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+              <h3>
+                <a href="/"></a>
+                <a href="/"></a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>Need for Speed Heat</h2>
+          <br />
+          <p>
+            Need for Speed Heat is a popular open-world racing game developed by
+            Ghost Games and published by Electronic Arts. Released in November
+            2019, it delivers a thrilling experience by combining fast-paced
+            street
+          </p>
+        </div>
+      </div>
+      <!-- Repeat this block as needed -->
+
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img src="WreckFeast.png" alt="Game 3" />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+              <h3>
+                <a href="/"></a>
+                <a href="/"></a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>Wreckfest</h2>
+          <br />
+          <p>
+            Wreckfest is a dynamic racing game focused on demolition derby-style
+            gameplay. Developed by Bugbear Entertainment, it combines realistic
+            physics and thrilling, chaotic races with soft-body damage modeling.
+          </p>
+        </div>
+      </div>
+
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img src="Dirt 5.avif" alt="Game 4" />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+              <h3>
+                <a href="/"></a>
+                <a href="/"></a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>Dirt 5</h2>
+          <br />
+          <p>
+            Dirt 5 is an exhilarating off-road racing game developed by
+            Codemasters, offering players a vibrant, fast-paced arcade racing
+            experience. Released in 2020, the game emphasizes bold design,
+            thrilling gameplay, and variety, making it a standout in the racing
+            genre.
+          </p>
+        </div>
+      </div>
+
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img src="Asphlat.jpg" alt="Game 5" />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+              <h3>
+                <a href="/"></a>
+                <a href="/"></a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>Asphalt 8: Airborne</h2>
+          <br />
+          <p>
+            Asphalt 8: Airborne is a high-octane arcade racing game developed by
+            Gameloft, known for its thrilling gameplay, stunning visuals, and
+            fast-paced action.
+          </p>
+        </div>
+      </div>
+
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img src="ForzaStreet.jpeg" alt="Game 6" />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+              <h3>
+                <a href="/"></a>
+                <a href="/"></a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>Forza Street</h2>
+          <br />
+          <p>
+            Forza Street is a free-to-play racing game developed by Microsoft
+            Studios, which brings cinematic street racing to mobile devices and
+            Windows PCs. Unlike traditional Forza titles, Forza Street focuses
+            on streamlined gameplay mechanics.
+          </p>
+        </div>
+      </div>
+
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img src="Project Cars.jpg" alt="Game 2" />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+              <h3>
+                <a href="/"></a>
+                <a href="/"></a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>Project CARS 2</h2>
+          <br />
+          <p>
+            Project CARS 2 is a motorsport racing simulator video game developed
+            by Slightly Mad Studios and published and distributed by the Bandai
+            Namco Entertainment group. It was released worldwide on 22 September
+            2017 for PlayStation 4, Windows, and Xbox One.
+          </p>
+        </div>
+      </div>
+
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img src="GT Racing.jpg" alt="Game 2" />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+              <h3>
+                <a href="/"></a>
+                <a href="/"></a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>GT Racing 2: The Real Car</h2>
+          <br />
+          <p>
+            GT Racing 2: The Real Car Experience is a delisted 2013 racing video
+            game developed by Gameloft Bulgaria and published by Gameloft. It
+            was the sequel to GT Racing: Motor Academy. Gameloft quietly
+            delisted and closed online servers of the game on December 1, 2023.
+            Gameloft made no announcement.
+          </p>
+        </div>
+      </div>
+
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img src="Dirt Rally.avif" alt="Game 2" />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+              <h3>
+                <a href="/"></a>
+                <a href="/"></a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>Dirt Rally 2.0</h2>
+          <br />
+          <p>
+            Dirt Rally 2.0 is a racing simulation video game developed and
+            published by Codemasters for PlayStation 4, Windows, and Xbox One.
+            It was released on 26 February 2019. A version for Amazon Luna
+            followed on 3 June 2021.
+          </p>
+        </div>
+      </div>
+
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img src="Burnout paradaise.webp" alt="Game 2" />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+              <h3>
+                <a href="/"></a>
+                <a href="/"></a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>Burnout Paradise</h2>
+          <br />
+          <p>
+            Burnout Paradise is a 2008 racing video game developed by Criterion
+            Games and published by Electronic Arts for PlayStation 3, Xbox 360
+            and Microsoft Windows. It was also released on the PlayStation Store
+            and via Xbox Live Marketplace's Games on Demand.
+          </p>
+        </div>
+      </div>
+
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img src="Assetto.webp" alt="Game 2" />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+              <h3>
+                <a href="/"></a>
+                <a href="/"></a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>Assetto Corsa</h2>
+          <br />
+          <p>
+            Assetto Corsa is a sim racing video game developed by the Italian
+            video game developer Kunos Simulazioni. It is designed with an
+            emphasis on a realistic racing experience with support for extensive
+            customization and moddability.
+          </p>
+        </div>
+      </div>
+
+      <!-- Additional replicated cards -->
+      <div class="fcard">
+        <img src="Burnout 3.avif" alt="Game 12" />
+        <div class="fcarddetails">
+          <div class="tegs2">
+            <div class="teg">
+              <i class="fa-solid fa-tv"></i>
+              <h3></h3>
+            </div>
+            <div class="teg">
+              <i class="fa-solid fa-tags"></i>
+              <h3>
+                <a href="/"></a>
+                <a href="/"></a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="fhovercont">
+          <h2>Burnout 3: Takedown</h2>
+          <br />
+          <p>
+            Burnout 3: Takedown is a 2004 racing video game developed by
+            Criterion Games and published by Electronic Arts. It is the third
+            instalment in the Burnout series, which is characterised by
+            fast-paced arcade racing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
