@@ -10,7 +10,7 @@ A modern, responsive eSports/gaming website built with HTML, CSS, JS and PHP by 
 6. [How to Use / Customize](#how-to-use-customize)  
 7. [Contributing](#contributing)  
 8. [Contact](#contact)  
-9. [License](#license)  
+
 
 ## About  
 Game-X is a gaming website template oriented towards esports, tournaments, gaming community showcases, and game-media content. The website offers:  
@@ -36,13 +36,35 @@ Game-X is a gaming website template oriented towards esports, tournaments, gamin
 - Optional: MySQL or other database backend if you extend login/signup/store features  
 
 ## Project Structure  
-Game-X-The-Gaming-Website--main/
-├─ index.php          # Main page markup (served by PHP host)
-├─ style.css          # Global styles (layout, components, responsive)
-├─ utility.css        # Small utility classes (spacing, display, colors)
-├─ script.js          # Core site interactions (menus, UI helpers)
-├─ heo.js             # Page/section-specific behaviors
-└─ hello.txt          # Sample content stub
+Game-X-The-Gaming-Website/
+└── main/
+    ├── index.php
+    ├── assets/
+    │   ├── css/
+    │   │   ├── style.css
+    │   │   └── utility.css
+    │   ├── js/
+    │   │   ├── script.js
+    │   │   └── pages.js
+    │   └── img/
+    ├── components/
+    │   ├── header.php
+    │   ├── footer.php
+    │   ├── card-game.php
+    │   └── product-card.php
+    ├── pages/
+    │   ├── home.php
+    │   ├── tournaments.php
+    │   ├── shop.php
+    │   └── about.php
+    ├── data/
+    │   ├── tournaments.json
+    │   └── products.json
+    ├── api/
+    │   ├── tournaments.php
+    │   └── products.php
+    └── README.md
+
 
 *(Adjust the folder names exactly as in your repo)*  
 
