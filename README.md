@@ -1,78 +1,110 @@
-Game‑X — The Gaming Website
-A modern, responsive eSports/gaming website built with HTML, CSS, and JavaScript. It features a hero section, game highlights, tournaments, news/blog cards, a shop CTA, and a contact/footer area, optimized for performance and mobile-first layouts.​
+# Game-X — The Gaming Website  
+A modern, responsive eSports/gaming website built with HTML, CSS, JS and PHP by Ujwal Warad.
 
-Features
-Responsive layout for mobile, tablet, and desktop using semantic HTML and modern CSS utilities.​
+## Table of Contents
+1. [About](#about)  
+2. [Features](#features)  
+3. [Tech Stack](#tech-stack)  
+4. [Project Structure](#project-structure)  
+5. [Getting Started](#getting-started)  
+6. [How to Use / Customize](#how-to-use-customize)  
+7. [Contributing](#contributing)  
+8. [Contact](#contact)  
+9. [License](#license)  
 
-Reusable components: navbar, hero banner, card grids, callouts, and footer.​
+## About  
+Game-X is a gaming website template oriented towards esports, tournaments, gaming community showcases, and game-media content. The website offers:  
+- Hero banner + featured games section  
+- Tournament or event highlight cards  
+- News/blog cards for gaming updates  
+- Shop call-to-action area  
+- Contact & footer sections  
+- Responsive design across mobile, tablet, desktop  
 
-Basic interactivity in vanilla JavaScript (menu toggle, sliders, sticky header).​
+## Features  
+- Responsive layout using semantic HTML5 and modern CSS (Flexbox/Grid)  
+- Reusable UI components: navbar, hero section, card grids, call-to-action, footer  
+- Basic interactivity via vanilla JavaScript (mobile nav toggle, sliders, sticky header)  
+- Lightweight build (no heavy JS frameworks) suitable for static hosting or PHP-backed hosting  
+- SEO-friendly structure with meta tags + social sharing preview (if implemented)  
 
-SEO-friendly structure with meta tags and social sharing preview tags.​
+## Tech Stack  
+- HTML5 — semantic markup  
+- CSS3 — Flexbox & Grid layout, responsive utilities  
+- JavaScript — vanilla JS for UI behaviour (no framework)  
+- PHP — (as indicated by files in repo) for server-side tasks (e.g., contact form, login/signup)  
+- Optional: MySQL or other database backend if you extend login/signup/store features  
 
-Lightweight, no framework build suitable for GitHub Pages or any static host.​
-
-Tech Stack
-HTML5 for semantic structure.​
-
-CSS3 with flexbox/grid for layout and responsive utilities.​
-
-Vanilla JavaScript for interactive behavior.​
-
-Project Structure
-text
+## Project Structure  
 Game-X-The-Gaming-Website--main/
-├─ index.html
-├─ assets/
-│  ├─ css/
-│  │  └─ styles.css
-│  ├─ js/
-│  │  └─ main.js
-│  └─ images/
-│     ├─ logo.svg
-│     ├─ hero.jpg
-│     └─ thumbnails/
-└─ README.md
-index.html: Landing page with hero, sections, and links.​
+├─ index.php          # Main page markup (served by PHP host)
+├─ style.css          # Global styles (layout, components, responsive)
+├─ utility.css        # Small utility classes (spacing, display, colors)
+├─ script.js          # Core site interactions (menus, UI helpers)
+├─ heo.js             # Page/section-specific behaviors
+└─ hello.txt          # Sample content stub
 
-assets/css/styles.css: Global styles, variables, and responsive rules.​
+*(Adjust the folder names exactly as in your repo)*  
 
-assets/js/main.js: Navigation toggles, sliders, and small UI helpers.​
+## Getting Started  
+### Prerequisites  
+- A modern web browser (Chrome, Firefox, Edge, Safari)  
+- [Optional] Git for cloning the repo  
+- [Optional] A local static server or PHP-enabled web server for full functionality (e.g., login)  
 
-assets/images: Logos, hero assets, and game thumbnails.​
-
-Getting Started
-Prerequisites
-Any modern browser.​
-
-Optional: Git for cloning and a static server for local dev.​
-
-Clone
-text
+### Clone the repository  
+```bash
 git clone https://github.com/Ujwal1121/Game-X-The-Gaming-Website--main.git
 cd Game-X-The-Gaming-Website--main
-If you prefer SSH, ensure keys are configured before cloning.​
+Run locally
 
-Run Locally
-Option A: Open index.html directly in your browser.​
+Option A – Static mode
+Just open index.php (or index.html if you rename) in your browser.
+Option B – Local server
 
-Option B: Use a simple static server to enable relative asset paths and future API stubs:​
+For Python (static files):
 
-Python 3:
+python3 -m http.server 8080
 
-macOS/Linux: python3 -m http.server 8080
 
-Windows: py -m http.server 8080
+Then open http://localhost:8080
 
-Visit http://localhost:8080​
+For PHP:
+Run a PHP built-in server from the root folder:
 
-Node (serve): npx serve . and open the printed URL.​
+php -S localhost:8000
 
-Customization
-Branding: Replace assets/images/logo.svg and hero.jpg. Update title and meta tags in index.html.​
 
-Colors/Fonts: Edit CSS variables and font stacks in assets/css/styles.css.​
+Then open http://localhost:8000
 
-Sections: Duplicate or remove feature/tournament/news cards in index.html as needed.​
+How to Use / Customize
 
-JS Behavior: Toggle mobile nav, add sliders, or lazy-load images in assets/js/main.js.
+Replace the logo (e.g., assets/img/logo.svg) and hero image to reflect your brand.
+
+Edit index.php (or .html) for changing sections, adding/removing feature cards, tournaments, news items.
+
+Modify CSS variables and font stacks in style.css / utility styles to adjust theming (colours, typography).
+
+In script.js, you can extend behaviour: mobile nav toggles, lazy-loading images, sliders/carousels etc.
+
+If you have a backend (PHP + database) for login/signup, update configuration, sanitization and security accordingly.
+
+Contributing
+
+Feel free to fork the repository, make improvements or add features (e.g., a blog engine, admin dashboard, API integration). When submitting pull requests:
+
+Follow consistent code style (indentation, naming)
+
+Ensure responsiveness and cross-browser compatibility
+
+Add comments and documentation where necessary
+
+Contact
+
+Author: Ujwal Warad
+
+Email: ujwalwarad086@gmail.com
+
+LinkedIn: https://www.linkedin.com/in/ujwal-warad-ba655b249
+
+GitHub: https://github.com/Ujwal1121
