@@ -65,8 +65,6 @@ Game-X-The-Gaming-Website/
     │   └── products.php
     └── README.md
 
-
-
 *(Adjust the folder names exactly as in your repo)*  
 
 ## Getting Started  
